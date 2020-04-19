@@ -135,7 +135,7 @@ class DaumNewsCollector:
             result = copy.deepcopy(news_contents)
             result['title'] = title
             result['reg_date'] = reg_date
-            result['sentences'] = sentences
+            result['sentences'] = sentences.strip()
             result['result_code'] = '1'
             rid = create_resource_id(result)
             result['resource_id'] = rid
